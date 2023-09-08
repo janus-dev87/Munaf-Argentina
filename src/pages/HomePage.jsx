@@ -62,7 +62,7 @@ function HomePage() {
             sm:w-11/12 
             lg:w-full  
             xl:border-r-[1px] xl:border-solid xl:border-r-gray-300
-            xl:border-b-[1px]  xl:border-b-gray-500
+            xl:border-b-[1px]  xl:border-b-gray-300
             border-b-[1px] border-solid border-b-slate-300"
             >
               <div className=" mx-auto">
@@ -101,7 +101,7 @@ function HomePage() {
            xl:w-1/2
            
            xl:border-r-[1px] xl:border-solid xl:border-r-gray-300
-            xl:border-b-[1px]  xl:border-b-gray-500
+            xl:border-b-[1px]  xl:border-b-gray-300
            border-b-[1px] border-solid border-b-slate-300"
           >
             <div className="mx-auto">
