@@ -22,15 +22,16 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-700/80 md:h-[6vh] md:flex md:items-center  rounded-b-3xl fixed w-full z-50"
+      className="bg-gray-950/80 md:h-[12vh] lg:h-[14vh]
+      md:flex md:items-center  rounded-b-3xl fixed w-full z-50"
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 lg:px-8 xl:px-4 ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-custom-red hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -40,10 +41,10 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch xl:items-center">
                 <div className="flex  items-center">
                   <img
-                    className="h-[1.6rem] w-11/12"
+                    className="h-[1.6rem] w-11/12 xl:w-full xl:h-12"
                     src={image}
                     alt="Your Company"
                   />
@@ -56,9 +57,9 @@ export default function Navbar() {
                         to={item.href}
                         className={classNames(
                           item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-xs font-medium text-center"
+                            ? "bg-custom-red text-white"
+                            : "text-gray-300 hover:bg-custom-red hover:text-white",
+                          "rounded-md px-3 py-2 text-xs font-medium text-center lg:text-lg"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -80,8 +81,8 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      ? "bg-custom-red text-white"
+                      : "text-gray-300 hover:bg-custom-red hover:text-white",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}

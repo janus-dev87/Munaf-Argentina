@@ -10,10 +10,15 @@ export default function DropdownMenu(props) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+        <Menu.Button
+          className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-custom-red px-3 py-2
+         text-sm font-semibold text-slate-100 tracking-widest shadow-sm   hover:bg-red-800  lg:text-[16px]
+         xl:text-base xl:tracking-wider xl:font-medium"
+        >
           {props.options.title}
           <ChevronDownIcon
-            className="-mr-1 h-5 w-5 text-gray-400"
+            className="-mr-1 h-5 w-5 text-white font-bold 
+            xl:h-6 xl:w-6 "
             aria-hidden="true"
           />
         </Menu.Button>
@@ -28,7 +33,10 @@ export default function DropdownMenu(props) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute h-auto max-h-56 overflow-y-auto right-0 z-10 mt-2 w-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items
+          className="absolute h-auto max-h-56 overflow-y-auto 
+        right-0 z-10 mt-2 w-auto origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+        >
           <div className="py-3 px-3">
             {props.options.options.map((item, index) => (
               <Menu.Item key={index}>
@@ -36,8 +44,10 @@ export default function DropdownMenu(props) {
                   <a
                     href="#"
                     className={classNames(
-                      active ? "bg-gray-100 text-gray-900" : "text-gray-700",
-                      "block px-4 py-2 text-sm"
+                      active
+                        ? "bg-gray-100 text-gray-950 tracking-wider"
+                        : "text-gray-950 tracking-wider",
+                      "block px-4 py-2 text-sm xl:text-2xl"
                     )}
                   >
                     {item}

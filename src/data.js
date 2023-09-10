@@ -4,7 +4,7 @@ const data = [
   {
     title: "AUDI Q3 2.0 TFSI QUATTRO TODO TERRNO AÑO 2017",
     year: "2017",
-    price: "34,500",
+    price: "34,5",
     imgSrc: "../images/auto-2179220-1920.jpg",
   },
   {
