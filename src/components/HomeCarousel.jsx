@@ -48,25 +48,25 @@ export default function Carousel() {
       <div className="flex ">
         <div className="w-screen flex-[0_0_100%]  h-screen relative bg-hero-image bg-cover bg-center bg-gray-800/50 bg-blend-multiply">
           <div
-            className={`absolute top-[40%] bg-gray-950/80 rounded-lg py-2 px-4 ml-2 ${
+            className={`absolute top-[40%]  rounded-lg py-2 px-4 ml-2 ${
               currentIndex === 0
                 ? "animate-fade-left animate-once animate-duration-[800ms] animate-delay-200 animate-ease-in animate-fill-backwards"
                 : ""
             }`}
           >
             <h1
-              className="  text-2xl  text-white/95 
-            md:text-3xl
-            lg:text-4xl
-            xl:text-5xl"
+              className="  text-2xl  text-white/95 font-bold
+            md:text-4xl
+            lg:text-5xl
+            xl:text-6xl"
             >
               Oportunidad del Mes
             </h1>
             <h2
-              className=" text-lg text-white/75 
-            md:text-xl
-            lg:text-2xl
-            xl:text-3xl"
+              className=" text-lg text-white/75  font-bold
+            md:text-2xl
+            lg:text-3xl
+            xl:text-4xl"
             >
               Porsche Panamera S2010 Impecable
             </h2>
@@ -74,25 +74,25 @@ export default function Carousel() {
         </div>
         <div className="w-screen h-screen flex-[0_0_100%] relative bg-hero-image2 bg-cover bg-center bg-gray-800/50 bg-blend-multiply">
           <div
-            className={`absolute top-[40%] bg-gray-950/80 rounded-lg py-2 px-4 ml-2 ${
+            className={`absolute top-[40%] rounded-lg py-2 px-4 ml-2 ${
               currentIndex === 1
                 ? "animate-fade-down animate-once animate-duration-[800ms] animate-delay-200 animate-ease-in animate-fill-backwards"
                 : ""
             }`}
           >
             <h1
-              className="  text-2xl  text-white/95 
-            md:text-3xl
-            lg:text-4xl
-            xl:text-5xl"
+              className="  text-2xl  text-white/95  font-bold
+            md:text-4xl
+            lg:text-5xl
+            xl:text-6xl"
             >
               Oportunidad del Mes
             </h1>
             <h2
-              className=" text-lg text-white/75 
-            md:text-xl
-            lg:text-2xl
-            xl:text-3xl"
+              className=" text-lg text-white/75  font-bold
+            md:text-2xl
+            lg:text-3xl
+            xl:text-4xl"
             >
               Porsche Panamera S2010 Impecable
             </h2>

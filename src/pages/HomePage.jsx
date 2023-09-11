@@ -144,15 +144,15 @@ function HomePage() {
       </section>
 
       <Banner />
-      <div className=" xl:mx-auto xl:bg-gray-100 sm:bg-gray-100">
-        <div className="xl:bg-gray-100 xl:flex">
-          <div className="md:bg-gray-100">
+      <div className=" xl:mx-auto xl:bg-white sm:bg-white">
+        <div className="xl:bg-white xl:flex">
+          <div className="md:bg-white">
             <section
-              className=" flex flex-col items-center justify-center py-12 mx-auto bg-gray-100 px-5 
+              className=" flex flex-col items-center justify-center py-12 mx-auto  px-5 
             lg:w-full  lg:border-b-slate-300
             xl:py-40
-            xl:border-r-[1px] xl:border-solid xl:border-r-gray-300
-            xl:border-b-[1px]  xl:border-b-gray-300
+           
+           xl:border-0
             border-b-[2px] border-solid border-b-slate-400/50"
             >
               <div className=" mx-auto w-11/12 flex flex-col justify-center items-center">
