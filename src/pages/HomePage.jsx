@@ -65,7 +65,7 @@ function HomePage() {
         </div>
         <Navbar className="fixed top-0 right-0" />
         <section
-          className="h-auto w-full absolute bottom-0 mx-auto bg-gray-950/80 px-3 py-5
+          className="h-auto w-full absolute bottom-0 mx-auto bg-gray-950/60 px-3 py-5
           shadow-2xl shadow-gray-800
            
            xl:border-r-[1px] xl:border-solid xl:border-r-gray-300
@@ -150,7 +150,7 @@ function HomePage() {
             <section
               className=" flex flex-col items-center justify-center py-12 mx-auto  px-5 
             lg:w-full  lg:border-b-slate-300
-            xl:py-40
+            xl:py-32
            
            xl:border-0
             border-b-[2px] border-solid border-b-slate-400/50"
@@ -255,7 +255,7 @@ function HomePage() {
         <div
           className="bg-white lg:py-10  
         lg:flex lg:flex-col lg:items-center lg:justify-center
-        xl:py-40"
+        xl:py-32"
         >
           <h1
             className="text-custom-red mx-auto py-3 text-5xl font-semibold tracking-widest text-center hidden 
@@ -416,13 +416,13 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="lg:bg-gray-200/50">
+      <div className="lg:bg-white">
         <section
-          className="bg-gray-200/50 lg:bg-gray-200/50 px-5 mx-auto h-auto py-10
+          className="bg-white lg:bg-white px-5 mx-auto h-auto py-10
         border-b-[2px] border-solid border-b-slate-400/50
       lg:px-16 lg:flex lg:flex-col lg:justify-center
       xl:space-y-10
-      xl:py-40"
+      xl:py-32"
         >
           <h1 className=" flex items-center text-5xl py-5 px-2 font-bold tracking-tight text-red-500 text-center">
             <span

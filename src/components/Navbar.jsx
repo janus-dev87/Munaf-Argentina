@@ -25,14 +25,14 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-950/50 md:h-[12vh] lg:h-[14vh]
+      className="bg-gray-950/60 md:h-[12vh] lg:h-[14vh]
        rounded-b-3xl fixed w-full z-50 mx-auto md:flex md:items-center
       xl:w-screen"
     >
       {({ open }) => (
         <>
           <div className=" mx-auto  px-2 w-full pt-2 lg:pt-0 ">
-            <div className="flex  justify-around text-center mb-[-5px] lg:mb-2 xl:mb-0 xl:justify-center xl:space-x-36">
+            <div className="flex  justify-around text-center mb-[-5px] lg:mb-2 xl:mb-2.5 xl:justify-center xl:space-x-36">
               <p className=" text-gray-200 text-xs lg:text-base xl:text-lg">
                 <FontAwesomeIcon
                   icon={faHouse}
@@ -65,7 +65,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-around sm:items-stretch xl:items-center">
-                <div className="flex  items-center">
+                <div className="flex  items-center ">
                   <img
                     className="h-[1.6rem] w-11/12 lg:h-[40px] lg:w-full xl:w-full xl:h-12"
                     src={image}
@@ -73,7 +73,7 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="hidden sm:block lg:ml-[3vw] xl:ml-[7vw]">
-                  <div className="flex  items-center">
+                  <div className="flex  items-center space-x-3">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
