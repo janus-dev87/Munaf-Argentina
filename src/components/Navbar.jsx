@@ -64,16 +64,16 @@ export default function Navbar() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-around sm:items-stretch xl:items-center">
-                <div className="flex  items-center ">
+              <div className="flex flex-1 items-center  justify-around sm:items-stretch xl:items-center">
+                <div className="flex  items-center  ">
                   <img
-                    className="h-[1.6rem] w-11/12 lg:h-[40px] lg:w-full xl:w-full xl:h-12"
+                    className="h-[1.6rem] w-11/12  lg:h-[40px] lg:w-full xl:w-full xl:h-12"
                     src={image}
                     alt="Your Company"
                   />
                 </div>
                 <div className="hidden sm:block lg:ml-[3vw] xl:ml-[7vw]">
-                  <div className="flex  items-center space-x-3">
+                  <div className="flex  items-center sm:space-x-1 md:space-x-3">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
