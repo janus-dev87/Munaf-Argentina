@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import image from "../images/munafo_logo_270x65v1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -75,19 +75,17 @@ export default function Navbar() {
                 <div className="hidden sm:block lg:ml-[3vw] xl:ml-[7vw]">
                   <div className="flex  items-center sm:space-x-1 md:space-x-3">
                     {navigation.map((item) => (
-                      <Link
+                      <NavLink
                         key={item.name}
                         to={item.href}
-                        className={classNames(
-                          item.current
-                            ? "bg-custom-red text-white"
-                            : "text-gray-300 hover:bg-custom-red hover:text-white",
-                          "rounded-md px-3 py-2 text-xs font-medium text-center lg:text-lg"
-                        )}
-                        aria-current={item.current ? "page" : undefined}
+                        className={({ isActive, isPending }) =>
+                          isActive
+                            ? "bg-custom-red text-white hover:text-white rounded-md px-3 py-2 text-xs font-medium text-center lg:text-lg"
+                            : "text-gray-300 hover:bg-custom-red hover:text-white rounded-md px-3 py-2 text-xs font-medium text-center lg:text-lg"
+                        }
                       >
                         {item.name}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
@@ -98,20 +96,17 @@ export default function Navbar() {
           <Disclosure.Panel className="sm:hidden animate-fade-down animate-once animate-duration-1000 animate-ease-linear animate-normal animate-fill-forwards">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <Disclosure.Button
+                <NavLink
                   key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-custom-red text-white"
-                      : "text-gray-300 hover:bg-custom-red hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
+                  to={item.href}
+                  className={({ isActive, isPending }) =>
+                    isActive
+                      ? "bg-custom-red text-white block rounded-md px-3 py-2 text-base font-medium"
+                      : "text-gray-300 hover:bg-custom-red block rounded-md px-3 py-2 text-base font-medium"
+                  }
                 >
                   {item.name}
-                </Disclosure.Button>
+                </NavLink>
               ))}
             </div>
           </Disclosure.Panel>
