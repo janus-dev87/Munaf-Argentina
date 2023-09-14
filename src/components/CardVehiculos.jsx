@@ -5,7 +5,7 @@ export default function CardVehiculos(props) {
   return (
     <div
       className="hover:bg-gray-200 cursor-pointer   max-w-sm rounded-2xl overflow-hidden shadow-xl min-w-[220px] p-1 h-auto
-    xl:min-w-[320px]"
+    xl:min-w-[280px]"
     >
       <img
         className="w-full p-1 rounded-2xl bg-gray-50"

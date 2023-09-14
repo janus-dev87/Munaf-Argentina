@@ -82,7 +82,9 @@ function Vehiculos() {
   return (
     <>
       <Navbar className="mb-10" />
-      <section className="pt-28 px-5 pb-12 md:pt-52 lg:pt-60">
+      <section className="pt-28 px-5 pb-12 md:pt-52 lg:pt-60 lg:px-16">
+        <h1 className="text-2xl font-bold lg:text-3xl">Todos los vehículos</h1>
+        <p className="text-base lg:text-xl">130 Unidades Encontradas</p>
         <div className="py-4">
           <CarFilter cars={carData} onFilterChange={handleFilterChange} />
           <div className="text-right px-2 lg:hidden">
@@ -101,8 +103,8 @@ function Vehiculos() {
             <DropdownsFilters options={price} />
           </div>
         )}
-        <div className="lg:flex lg:gap-x-12 lg:px-8  lg:justify-center">
-          <div className="hidden lg:flex lg:flex-col lg:space-y-5 lg:lg:pt-10">
+        <div className="lg:flex lg:gap-x-12   lg:justify-center">
+          <div className="hidden lg:flex lg:flex-col lg:px-16 lg:space-y-5 lg:lg:pt-10">
             <DropdownsFilters options={marcas} />
             <DropdownsFilters options={year} />
             <DropdownsFilters options={model} />
