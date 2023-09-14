@@ -85,12 +85,15 @@ function Vehiculos() {
       <section className="pt-28 px-5 pb-12 md:pt-52 lg:pt-60">
         <div className="py-4">
           <CarFilter cars={carData} onFilterChange={handleFilterChange} />
-          <div className="text-right px-2">
+          <div className="text-right px-2 lg:hidden">
             <Button name="Filtros" onclick={toggleSidebar} />
           </div>
         </div>
         {sideBarOpen && (
-          <div className="text-center space-x-3 space-y-3 pb-5">
+          <div
+            className="text-center space-x-3 space-y-3 pb-5 
+          lg:hidden"
+          >
             <DropdownsFilters options={marcas} />
             <DropdownsFilters options={year} />
             <DropdownsFilters options={model} />
@@ -98,14 +101,23 @@ function Vehiculos() {
             <DropdownsFilters options={price} />
           </div>
         )}
-        <div
-          className="grid grid-cols-1 space-y-5 justify-items-center
+        <div className="lg:flex lg:gap-x-12 lg:px-8  lg:justify-center">
+          <div className="hidden lg:flex lg:flex-col lg:space-y-5 lg:lg:pt-10">
+            <DropdownsFilters options={marcas} />
+            <DropdownsFilters options={year} />
+            <DropdownsFilters options={model} />
+            <DropdownsFilters options={kilometers} />
+            <DropdownsFilters options={price} />
+          </div>
+          <div
+            className="grid grid-cols-1 space-y-5 justify-items-center
         md:grid-cols-2 md:space-y-0 md:gap-8
         lg:grid-cols-3 lg:gap-10 lg:pt-4"
-        >
-          {data.map((car, index) => (
-            <CardVehiculos key={index} car={car} />
-          ))}
+          >
+            {data.map((car, index) => (
+              <CardVehiculos key={index} car={car} />
+            ))}
+          </div>
         </div>
         <div className="pt-8">
           <Pagination />
