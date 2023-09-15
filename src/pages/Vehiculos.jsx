@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import FiltrosVehiculos from "../components/FiltrosVehiculos";
 import CarFilter from "../components/CarFilter";
 import carData from "../carData";
 import CardVehiculos from "../components/CardVehiculos";
@@ -24,6 +25,36 @@ function Vehiculos() {
       "Porsche",
       "Mercedes",
       "Ferrari",
+    ],
+  };
+
+  const modelFilter = {
+    title: "Modelo",
+    options: [
+      { name: "Amarok", quantity: 6.741 },
+      { name: "208", quantity: 4.851 },
+      { name: "Hilux", quantity: 3.381 },
+      { name: "Cronos", quantity: 2.646 },
+      { name: "Ranger", quantity: 2.184 },
+      { name: "Kangoo", quantity: 2.079 },
+      { name: "Corolla", quantity: 1.701 },
+      { name: "Tracker", quantity: 1.407 },
+      { name: "Vento", quantity: 1.365 },
+    ],
+  };
+
+  const brandFilter = {
+    title: "Marca",
+    options: [
+      { name: "Amarok", quantity: 6.741 },
+      { name: "208", quantity: 4.851 },
+      { name: "Hilux", quantity: 3.381 },
+      { name: "Cronos", quantity: 2.646 },
+      { name: "Ranger", quantity: 2.184 },
+      { name: "Kangoo", quantity: 2.079 },
+      { name: "Corolla", quantity: 1.701 },
+      { name: "Tracker", quantity: 1.407 },
+      { name: "Vento", quantity: 1.365 },
     ],
   };
 
@@ -83,8 +114,6 @@ function Vehiculos() {
     <>
       <Navbar className="mb-10" />
       <section className="pt-28 px-5 pb-12 md:pt-52 lg:pt-60 lg:px-16">
-        <h1 className="text-2xl font-bold lg:text-3xl">Todos los vehículos</h1>
-        <p className="text-base lg:text-xl">130 Unidades Encontradas</p>
         <div className="py-4">
           <CarFilter cars={carData} onFilterChange={handleFilterChange} />
           <div className="text-right px-2 lg:hidden">
@@ -103,22 +132,36 @@ function Vehiculos() {
             <DropdownsFilters options={price} />
           </div>
         )}
+        <h1 className="text-2xl font-bold lg:text-3xl lg:hidden">
+          Todos los vehículos
+        </h1>
+        <p className="text-base lg:text-xl lg:hidden">
+          130 Unidades Encontradas
+        </p>
         <div className="lg:flex lg:gap-x-12   lg:justify-center">
-          <div className="hidden lg:flex lg:flex-col lg:px-16 lg:space-y-5 lg:lg:pt-10">
-            <DropdownsFilters options={marcas} />
-            <DropdownsFilters options={year} />
-            <DropdownsFilters options={model} />
-            <DropdownsFilters options={kilometers} />
-            <DropdownsFilters options={price} />
-          </div>
           <div
-            className="grid grid-cols-1 space-y-5 justify-items-center
+            className="hidden lg:flex lg:flex-col lg:items-start lg:justify-start lg:mr-16 lg:pt-10 whitespace-nowrap
+          xl:mr-24"
+          >
+            <FiltrosVehiculos data={modelFilter} />
+            <FiltrosVehiculos data={brandFilter} />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold lg:text-3xl hidden lg:block">
+              Todos los vehículos
+            </h1>
+            <p className="text-base lg:text-xl hidden lg:block">
+              130 Unidades Encontradas
+            </p>
+            <div
+              className="grid grid-cols-1 space-y-5 justify-items-center
         md:grid-cols-2 md:space-y-0 md:gap-8
         lg:grid-cols-3 lg:gap-10 lg:pt-4"
-          >
-            {data.map((car, index) => (
-              <CardVehiculos key={index} car={car} />
-            ))}
+            >
+              {data.map((car, index) => (
+                <CardVehiculos key={index} car={car} />
+              ))}
+            </div>
           </div>
         </div>
         <div className="pt-8">
