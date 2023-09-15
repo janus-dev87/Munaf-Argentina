@@ -113,8 +113,8 @@ function Vehiculos() {
   return (
     <>
       <Navbar className="mb-10" />
-      <section className="pt-28 px-5 pb-12 md:pt-52 lg:pt-60 lg:px-16">
-        <div className="py-4">
+      <section className="pt-28 px-5 pb-12 md:pt-36 lg:pt-32  lg:px-16 xl:pt-56">
+        <div className="py-4 md:hidden lg:hidden">
           <CarFilter cars={carData} onFilterChange={handleFilterChange} />
           <div className="text-right px-2 lg:hidden">
             <Button name="Filtros" onclick={toggleSidebar} />
@@ -132,27 +132,38 @@ function Vehiculos() {
             <DropdownsFilters options={price} />
           </div>
         )}
-        <h1 className="text-2xl font-bold lg:text-3xl lg:hidden">
+
+        <h1 className="text-2xl font-bold py-2 lg:text-3xl md:hidden">
           Todos los vehículos
         </h1>
-        <p className="text-base lg:text-xl lg:hidden">
+        <p className="text-base text-gray-500 lg:text-xl pb-5 md:hidden">
           130 Unidades Encontradas
         </p>
-        <div className="lg:flex lg:gap-x-12   lg:justify-center">
+        <div className="lg:flex lg:gap-x-12 md:justify-center">
           <div
             className="hidden lg:flex lg:flex-col lg:items-start lg:justify-start lg:mr-16 lg:pt-10 whitespace-nowrap
-          xl:mr-24"
+          xl:mr-20"
           >
             <FiltrosVehiculos data={modelFilter} />
             <FiltrosVehiculos data={brandFilter} />
           </div>
           <div>
-            <h1 className="text-2xl font-bold lg:text-3xl hidden lg:block">
-              Todos los vehículos
-            </h1>
-            <p className="text-base lg:text-xl hidden lg:block">
-              130 Unidades Encontradas
-            </p>
+            <div className="md:flex items-center py-px hidden lg:pt-10 xl:pt-0">
+              <div className="w-1/2">
+                <h1 className="text-2xl font-bold lg:text-3xl hidden md:block">
+                  Todos los vehículos
+                </h1>
+                <p className="text-base text-gray-500 lg:text-xl hidden md:block">
+                  130 Unidades Encontradas
+                </p>
+              </div>
+              <div className="py-4 w-1/2">
+                <CarFilter cars={carData} onFilterChange={handleFilterChange} />
+                <div className="text-right px-2 lg:hidden">
+                  <Button name="Filtros" onclick={toggleSidebar} />
+                </div>
+              </div>
+            </div>
             <div
               className="grid grid-cols-1 space-y-5 justify-items-center
         md:grid-cols-2 md:space-y-0 md:gap-8

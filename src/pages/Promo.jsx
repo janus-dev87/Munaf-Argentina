@@ -9,10 +9,41 @@ import Pagination from "../components/Pagination";
 import CardVehiculos from "../components/CardVehiculos";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import FiltrosVehiculos from "../components/FiltrosVehiculos";
 
 function Promo() {
   const [data, setData] = useState(carData);
   const [sideBarOpen, setSideBarOpen] = useState(false);
+
+  const modelFilter = {
+    title: "Modelo",
+    options: [
+      { name: "Amarok", quantity: 6.741 },
+      { name: "208", quantity: 4.851 },
+      { name: "Hilux", quantity: 3.381 },
+      { name: "Cronos", quantity: 2.646 },
+      { name: "Ranger", quantity: 2.184 },
+      { name: "Kangoo", quantity: 2.079 },
+      { name: "Corolla", quantity: 1.701 },
+      { name: "Tracker", quantity: 1.407 },
+      { name: "Vento", quantity: 1.365 },
+    ],
+  };
+
+  const brandFilter = {
+    title: "Marca",
+    options: [
+      { name: "Amarok", quantity: 6.741 },
+      { name: "208", quantity: 4.851 },
+      { name: "Hilux", quantity: 3.381 },
+      { name: "Cronos", quantity: 2.646 },
+      { name: "Ranger", quantity: 2.184 },
+      { name: "Kangoo", quantity: 2.079 },
+      { name: "Corolla", quantity: 1.701 },
+      { name: "Tracker", quantity: 1.407 },
+      { name: "Vento", quantity: 1.365 },
+    ],
+  };
 
   const marcas = {
     title: "Marca",
@@ -125,7 +156,7 @@ function Promo() {
           <p>Planes a Medida</p>
           <Button name="Contáctanos" />
         </div>
-        <section className="px-6 py-6 md:pt-0 md:pb-16">
+        <section className="px-6 py-6 md:pt-0 md:pb-16 lg:px-16">
           <div className="py-4 md:pb-4 md:pt-0">
             <CarFilter cars={carData} onFilterChange={handleFilterChange} />
             <div className="text-right px-2 lg:hidden">
@@ -145,12 +176,12 @@ function Promo() {
             )}
           </div>
           <div className="lg:flex lg:gap-x-12   lg:justify-center">
-            <div className="hidden lg:flex lg:flex-col lg:px-16 lg:space-y-5 lg:lg:pt-10">
-              <DropdownsFilters options={marcas} />
-              <DropdownsFilters options={year} />
-              <DropdownsFilters options={model} />
-              <DropdownsFilters options={kilometers} />
-              <DropdownsFilters options={price} />
+            <div
+              className="hidden lg:flex lg:flex-col lg:items-start lg:justify-start lg:mr-16 lg:pt-10 whitespace-nowrap
+          xl:mr-24"
+            >
+              <FiltrosVehiculos data={modelFilter} />
+              <FiltrosVehiculos data={brandFilter} />
             </div>
             <div
               className="grid grid-cols-1 space-y-5 justify-items-center
