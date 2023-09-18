@@ -26,7 +26,7 @@ export default function Navbar() {
     <Disclosure
       as="nav"
       className="bg-gray-950/60 md:h-[12vh] lg:h-[14vh]
-       rounded-b-3xl fixed w-full z-50 mx-auto md:flex md:items-center
+     fixed w-full z-50 mx-auto md:flex md:items-center
       xl:w-screen"
     >
       {({ open }) => (

@@ -9,6 +9,7 @@ import CardVehiculos from "../components/CardVehiculos";
 import Button from "../components/Button";
 import DropdownsFilters from "../components/DropdownsFilters";
 import Pagination from "../components/Pagination";
+import FiltroRango from "../components/FiltroRango";
 
 function Vehiculos() {
   const [data, setData] = useState(carData);
@@ -26,6 +27,21 @@ function Vehiculos() {
       "Mercedes",
       "Ferrari",
     ],
+  };
+
+  const kilometersFiltro = {
+    title: "Kilómetros",
+    options: [
+      { name: "0 km", quantity: 26.51 },
+      { name: "0 a 40.000 km", quantity: 13.222 },
+      { name: "40.000 a 75.000 km", quantity: 15.532 },
+      { name: "75.000 a 100.000 km", quantity: 14.256 },
+      { name: "100.000 km o más", quantity: 37.884 },
+    ],
+    range: {
+      min: "Mínimo",
+      max: "Máximo",
+    },
   };
 
   const modelFilter = {
@@ -139,13 +155,14 @@ function Vehiculos() {
         <p className="text-base text-gray-500 lg:text-xl pb-5 md:hidden">
           130 Unidades Encontradas
         </p>
-        <div className="lg:flex lg:gap-x-12 md:justify-center">
+        <div className="lg:flex lg:gap-x-12 md:justify-center lg:py-8">
           <div
-            className="hidden lg:flex lg:flex-col lg:items-start lg:justify-start lg:mr-16 lg:pt-10 whitespace-nowrap
-          xl:mr-20"
+            className="hidden lg:flex  lg:flex-col lg:items-start lg:justify-start  lg:pt-10 whitespace-nowrap
+          xl:mr-20 max-w-xs"
           >
             <FiltrosVehiculos data={modelFilter} />
             <FiltrosVehiculos data={brandFilter} />
+            <FiltroRango data={kilometersFiltro} />
           </div>
           <div>
             <div className="md:flex items-center py-px hidden lg:pt-10 xl:pt-0">

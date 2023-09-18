@@ -15,7 +15,7 @@ export default function CardVehiculos(props) {
         />
       </div>
       <div className="px-3 py-4 ">
-        <div className="font-bold text-sm text-left text-red-700 mb-2 xl:text-lg">
+        <div className="font-bold text-sm text-left text-gray-800 mb-2 xl:text-lg">
           {props.car.title}
         </div>
         <p className="text-gray-800 text-lg text-left font-bold">
