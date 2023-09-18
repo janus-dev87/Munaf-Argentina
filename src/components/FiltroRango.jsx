@@ -14,7 +14,7 @@ export default function FiltrosVehiculos(props) {
               {model.name} ({model.quantity})
             </p>
           ))}
-          <div className="space-x-1 flex">
+          <div className="space-x-1 flex w-[90%] xl:w-[65%]">
             <input
               type="number"
               name="minimo"

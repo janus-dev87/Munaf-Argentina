@@ -25,14 +25,14 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-950/60 md:h-[130px] lg:h-[200px]
+      className="bg-gray-950/60 md:h-[130px]
      fixed w-full z-50 mx-auto md:flex md:items-center
       xl:w-screen"
     >
       {({ open }) => (
         <>
-          <div className=" mx-auto  px-2 w-full pt-2 lg:pt-0 ">
-            <div className="flex  justify-around text-center mb-[-5px] lg:mb-2 xl:mb-2.5 xl:justify-center xl:space-x-36">
+          <div className=" mx-auto  px-2 w-full lg:pt-0 ">
+            <div className="flex  justify-around text-center mb-[-5px] lg:mb-4 lg:-mt-3 xl:mb-2.5 md:justify-center md:space-x-5">
               <p className=" text-gray-200 text-xs lg:text-base xl:text-lg">
                 <FontAwesomeIcon
                   icon={faHouse}

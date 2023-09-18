@@ -20,6 +20,7 @@ import HomeCarousel from "../components/HomeCarousel";
 import BackgroundCarousel from "../components/BackgroundCarousel";
 import data from "../data";
 import images from "../images";
+import imageBienvenido from "../images/2021-11-08.jpg";
 
 const marcas = {
   title: "Marca",
@@ -95,11 +96,9 @@ function HomePage() {
                  xl:space-x-4"
               >
                 <input
-                  id="email-address"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
+                  id="search"
+                  name="search"
+                  type="text"
                   className="h-auto rounded-md border-0 bg-gray-600 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 
                   sm:text-sm sm:leading-6 lg:text-lg xl:text-lg"
                   placeholder="Ingresa tu búsqueda"
@@ -149,32 +148,37 @@ function HomePage() {
           <div className="md:bg-white">
             <section
               className=" flex flex-col items-center justify-center py-12 mx-auto  px-5 
-            lg:w-full  lg:border-b-slate-300
+            lg:w-full  lg:border-b-slate-300 lg:flex-row lg:gap-x-16 lg:px-14
             xl:py-32
-           
            xl:border-0
             border-b-[2px] border-solid border-b-slate-400/50"
             >
-              <div className=" mx-auto w-11/12 flex flex-col justify-center items-center">
+              <div
+                className=" mx-auto w-11/12 flex flex-col justify-center items-center
+               lg:w-1/2 lg:items-start"
+              >
                 <h1
                   className=" flex items-center text-4xl py-5 px-2 font-bold tracking-tight text-red-500 text-center
                 sm:px-12
-                xl:text-4xl"
+                lg:px-0
+                lg:text-left
+                xl:text-5xl"
                 >
                   <span
                     aria-hidden="true"
                     className="flex-grow bg-red-400 rounded h-0.5"
                   ></span>
-                  <span className="mx-3 ">Bienvenidos</span>
+                  <span className="mx-3 lg:mx-0 ">Bienvenidos</span>
                   <span
                     aria-hidden="true"
                     className="flex-grow bg-red-400 rounded h-0.5"
                   ></span>
                 </h1>
                 <p
-                  className="text-lg text-gray-950/75 py-2 px-2
-                sm:px-20
-                xl:text-xl xl:px-36 xl:text-center"
+                  className="text-lg text-gray-950/75 py-2 px-2 text-center
+                 lg:px-0
+                lg:text-left
+                xl:text-xl"
                 >
                   Gracias por visitar nuestro sitio. En Munafó Automóviles
                   ofrecemos vehículos seleccionados en perfectas condiciones,
@@ -189,6 +193,13 @@ function HomePage() {
                 <div className="py-5">
                   <Button name="Conócenos" />
                 </div>
+              </div>
+              <div className="flex items-center justify-center lg:w-1/2">
+                <img
+                  src={imageBienvenido}
+                  alt="Bienvenidos"
+                  className="shadow-lg shadow-gray-500/60 rounded-2xl sm:mx-2 sm:w-4/5 md:w-3/5 lg:w-full"
+                />
               </div>
             </section>
           </div>
