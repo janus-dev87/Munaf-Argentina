@@ -32,23 +32,25 @@ export default function Navbar() {
       {({ open }) => (
         <>
           <div className=" mx-auto  px-2 w-full lg:pt-0 ">
-            <div className="flex  justify-around text-center mb-[-5px] lg:mb-4 lg:-mt-3 xl:mb-2.5 md:justify-center md:space-x-5">
-              <p className=" text-gray-200 text-xs lg:text-base xl:text-lg">
-                <FontAwesomeIcon
-                  icon={faHouse}
-                  style={{ color: "#ffffff" }}
-                  className="mr-2"
-                />
-                Av. Del Libertador 14745, Acassuso, Bs. As.
-              </p>
-              <p className="  text-gray-200 text-xs lg:text-base xl:text-lg">
-                <FontAwesomeIcon
-                  icon={faPhone}
-                  style={{ color: "#ffffff" }}
-                  className="mr-2"
-                />
-                11 4792 5820
-              </p>
+            <div className="bg-gray-950 w-screen -ml-2">
+              <div className="flex justify-around text-center mb-[-5px] py-px lg:py-px lg:mb-4 lg:-mt-3 xl:mb-2.5 md:justify-center md:space-x-5">
+                <p className=" text-gray-200 text-xs lg:text-base xl:text-lg">
+                  <FontAwesomeIcon
+                    icon={faHouse}
+                    style={{ color: "#ffffff" }}
+                    className="mr-2"
+                  />
+                  Av. Del Libertador 14745, Acassuso, Bs. As.
+                </p>
+                <p className="  text-gray-200 text-xs lg:text-base xl:text-lg">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    style={{ color: "#ffffff" }}
+                    className="mr-2"
+                  />
+                  11 4792 5820
+                </p>
+              </div>
             </div>
 
             <div className="relative flex h-16 items-center justify-between xl:max-w-full">
