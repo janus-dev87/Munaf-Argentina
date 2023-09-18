@@ -158,7 +158,7 @@ function Vehiculos() {
         <div className="lg:flex lg:gap-x-12 md:justify-center lg:py-8">
           <div
             className="hidden lg:flex  lg:flex-col lg:items-start lg:justify-start  lg:pt-10 whitespace-nowrap
-          xl:mr-20 max-w-xs"
+          max-w-xs"
           >
             <FiltrosVehiculos data={modelFilter} />
             <FiltrosVehiculos data={brandFilter} />

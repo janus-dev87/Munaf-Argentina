@@ -10,6 +10,7 @@ import CardVehiculos from "../components/CardVehiculos";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import FiltrosVehiculos from "../components/FiltrosVehiculos";
+import FiltroRango from "../components/FiltroRango";
 
 function Promo() {
   const [data, setData] = useState(carData);
@@ -43,6 +44,21 @@ function Promo() {
       { name: "Tracker", quantity: 1.407 },
       { name: "Vento", quantity: 1.365 },
     ],
+  };
+
+  const kilometersFiltro = {
+    title: "Kilómetros",
+    options: [
+      { name: "0 km", quantity: 26.51 },
+      { name: "0 a 40.000 km", quantity: 13.222 },
+      { name: "40.000 a 75.000 km", quantity: 15.532 },
+      { name: "75.000 a 100.000 km", quantity: 14.256 },
+      { name: "100.000 km o más", quantity: 37.884 },
+    ],
+    range: {
+      min: "Mínimo",
+      max: "Máximo",
+    },
   };
 
   const marcas = {
@@ -177,14 +193,15 @@ function Promo() {
           </div>
           <div className="lg:flex lg:gap-x-12   lg:justify-center">
             <div
-              className="hidden lg:flex lg:flex-col lg:items-start lg:justify-start lg:mr-16 lg:pt-10 whitespace-nowrap
-          xl:mr-24"
+              className="hidden lg:flex lg:flex-col lg:items-start lg:justify-start lg:pt-10 whitespace-nowrap
+          "
             >
               <FiltrosVehiculos data={modelFilter} />
               <FiltrosVehiculos data={brandFilter} />
+              <FiltroRango data={kilometersFiltro} />
             </div>
             <div
-              className="grid grid-cols-1 space-y-5 justify-items-center
+              className="grid grid-cols-1 h-min space-y-5 justify-items-center
         md:grid-cols-2 md:space-y-0 md:gap-8
         lg:grid-cols-3 lg:gap-10 lg:pt-4"
             >
