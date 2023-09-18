@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-950/60 md:h-[12vh] lg:h-[14vh]
+      className="bg-gray-950/60 md:h-[130px] lg:h-[200px]
      fixed w-full z-50 mx-auto md:flex md:items-center
       xl:w-screen"
     >

@@ -155,7 +155,7 @@ function Vehiculos() {
         <p className="text-base text-gray-500 lg:text-xl pb-5 md:hidden">
           130 Unidades Encontradas
         </p>
-        <div className="lg:flex lg:gap-x-12 md:justify-center lg:py-8">
+        <div className="lg:flex lg:gap-x-12 md:justify-center lg:py-8 xl:pt-0">
           <div
             className="hidden lg:flex  lg:flex-col lg:items-start lg:justify-start  lg:pt-10 whitespace-nowrap
           max-w-xs"
