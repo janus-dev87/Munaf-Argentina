@@ -92,10 +92,16 @@ function VendeAuto() {
   return (
     <>
       <Navbar />
-      <section>
-        <div className="flex flex-col space-y-10 items-center justify-center bg-hero-image h-screen bg-cover bg-gray-800/50 bg-blend-multiply px-8">
+      <section className="pt-24 md:pt-40">
+        <section
+          className="pb-4 px-12 
+        md:px-24 md:text-lg
+        lg:px-36 lg:text-xl
+        xl:px-56"
+        >
           <h1
-            className="text-gray-50 mt-[50%] font-bold text-5xl
+            className="text-gray-900  font-bold text-4xl text-center mb-1
+            lg:mb-4
           lg:text-5xl
           xl:text-6xl"
           >
@@ -103,7 +109,7 @@ function VendeAuto() {
           </h1>
           <div className="mb-4">
             <p
-              className="text-gray-50 text-lg text-center
+              className="text-gray-900 text-sm text-center mb-1
           lg:text-2xl
           xl:text-3xl"
             >
@@ -111,7 +117,7 @@ function VendeAuto() {
               mercado.
             </p>
             <p
-              className="text-gray-50 text-lg text-center
+              className="text-gray-900 text-sm text-center mb-6
           lg:text-2xl
           xl:text-3xl"
             >
@@ -119,14 +125,7 @@ function VendeAuto() {
               información de tu auto
             </p>
           </div>
-        </div>
-        <section
-          className="py-12 px-12 
-        md:px-24 md:text-lg
-        lg:px-36 lg:text-xl
-        xl:px-56"
-        >
-          <ol className="list-decimal space-y-4">
+          <ol className="list-decimal space-y-4 lg:px-10">
             {textList.map((question) => {
               return <li key={question.key}>{question.description}</li>;
             })}

@@ -20,7 +20,7 @@ import HomeCarousel from "../components/HomeCarousel";
 import BackgroundCarousel from "../components/BackgroundCarousel";
 import data from "../data";
 import images from "../images";
-import imageBienvenido from "../images/2021-11-08.jpg";
+import imageBienvenido from "../images/Image1-13.jpg";
 
 const marcas = {
   title: "Marca",
