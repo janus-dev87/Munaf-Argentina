@@ -33,7 +33,7 @@ export default function FiltrosVehiculos(props) {
               placeholder={range.max}
             />
 
-            <button className="w-1/5 border rounded-3xl bg-gray-600 cursor-pointer">
+            <button className="w-1/5 border rounded-3xl bg-custom-red cursor-pointer">
               <FontAwesomeIcon icon={faArrowRight} className="text-white" />
             </button>
           </div>
