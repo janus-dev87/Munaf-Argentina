@@ -8,10 +8,12 @@ import VendeAuto from "./pages/VendeAuto";
 import Servicio from "./pages/Servicio";
 import Empresa from "./pages/Empresa";
 import Contacto from "./pages/Contacto";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/vehiculos" element={<Vehiculos />} />
