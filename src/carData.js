@@ -1,5 +1,3 @@
-import image from "./images/munafo_logo_270x65v1.png";
-
 const data = [
   {
     title: "AUDI Q3 2.0 TFSI QUATTRO TODO TERRNO AÑO 2017",

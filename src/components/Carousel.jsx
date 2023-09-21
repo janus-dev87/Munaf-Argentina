@@ -1,9 +1,7 @@
-import React, { Children, useCallback, useEffect } from "react";
-import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+import React, { useCallback, useEffect } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Button from "./Button";
-import image from "../images/auto-2179220-1920.jpg";
-import { faOptinMonster } from "@fortawesome/free-brands-svg-icons";
 
 export default function Carousel({ children }) {
   const autoPlayOptions = {

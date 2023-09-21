@@ -1,5 +1,3 @@
-import { XMarkIcon } from "@heroicons/react/20/solid";
-
 export default function Banner() {
   return (
     <div className="relative isolate flex justify-center items-center md:h-[120px] shadow-lg gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 ">

@@ -6,7 +6,6 @@ import Button from "../components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPersonCircleCheck,
-  faBusinessTime,
   faCar,
   faWrench,
   faCarSide,
@@ -17,9 +16,7 @@ import CardCarousel from "../components/CardCarousel";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import HomeCarousel from "../components/HomeCarousel";
-import BackgroundCarousel from "../components/BackgroundCarousel";
 import data from "../data";
-import images from "../images";
 import imageBienvenido from "../images/Image1-13.jpg";
 
 const marcas = {

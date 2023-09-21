@@ -8,7 +8,6 @@ function classNames(...classes) {
 
 export default function DropdownMenu(props) {
   const [scrollPosition, setScrollPosition] = useState("");
-  const [positionY, setPositionY] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = () => {
@@ -18,7 +17,6 @@ export default function DropdownMenu(props) {
       setScrollPosition(" origin-bottom-right");
     }
   };
-  console.log(positionY);
 
   useEffect(() => {
     handleScroll();

@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from "react";
+import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
@@ -7,10 +7,6 @@ function classNames(...classes) {
 }
 
 export default function DropdownFilters(props) {
-  const [scrollPosition, setScrollPosition] = useState("");
-  const [positionY, setPositionY] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>

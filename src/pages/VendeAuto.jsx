@@ -4,7 +4,6 @@ import Button from "../components/Button";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import image from "../images/580b585b2edbce24c47b2ca5.png";
-import { text } from "@fortawesome/fontawesome-svg-core";
 import OpinionCard from "../components/OpinionCard";
 
 function VendeAuto() {

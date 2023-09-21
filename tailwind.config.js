@@ -9,10 +9,14 @@ module.exports = {
       },
       colors: {
         "custom-red": "#c7081b",
+        "custom-gray": "rgba(249, 233, 239, 0.4)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+      },
+      boxShadow: {
+        "shadow-custom": "rgba(0, 0, 0, 0.3) 0px 0px 5px 0px",
       },
     },
   },

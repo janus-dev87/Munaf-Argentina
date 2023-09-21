@@ -1,6 +1,4 @@
 import React from "react";
-import image from "../images/auto-2179220-1920.jpg";
-import image2 from "../images/mercedes-benz-841465_1920.jpg";
 
 export default function BackgroundCarousel(props) {
   return (

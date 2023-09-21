@@ -1,9 +1,7 @@
-import React, { Children, useCallback, useEffect, useState } from "react";
-import useEmblaCarousel, { EmblaOptionsType } from "embla-carousel-react";
+import React, { useCallback, useEffect, useState } from "react";
+import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import ButtonHeader from "./ButtonHeader";
-import images from "../images";
-import image from "../images/auto-2179220-1920.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,7 +13,6 @@ export default function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay(autoPlayOptions),
   ]);
-  const [index, setIndex] = useState();
   useEffect(() => {
     if (emblaApi) {
       console.log(emblaApi.slideNodes());

@@ -9,19 +9,19 @@ export default function CardCarousel(props) {
     >
       <div className="p-2">
         <img
-          class="w-full rounded-2xl bg-gray-50"
+          className="w-full rounded-2xl bg-gray-50"
           src={image}
           alt={`${props.props.title}`}
         />
       </div>
-      <div class="px-3 py-4 ">
-        <div class="font-bold text-sm text-left text-gray-800 mb-2 xl:text-lg">
+      <div className="px-3 py-4 ">
+        <div className="font-bold text-sm text-left text-gray-800 mb-2 xl:text-lg">
           {props.props.title}
         </div>
-        <p class="text-gray-800 text-lg text-left font-bold">
+        <p className="text-gray-800 text-lg text-left font-bold">
           U$S {props.props.price}
         </p>
-        <p class="text-gray-800 text-lg text-left font-bold">
+        <p className="text-gray-800 text-lg text-left font-bold">
           {props.props.year} / {props.props.km} km
         </p>
       </div>
