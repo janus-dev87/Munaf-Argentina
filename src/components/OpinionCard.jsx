@@ -6,7 +6,7 @@ function OpinionCard({ opinion }) {
 
   return (
     <div
-      className="bg-white shadow-md shadow-gray-700/25 rounded-lg py-8 px-5 max-w-xs min-h-[220px]
+      className="bg-white shadow-md shadow-gray-700/25 rounded-lg py-8 px-5 max-w-[250px] min-h-[220px]
     md:w-2/5"
     >
       <div className="mb-2">

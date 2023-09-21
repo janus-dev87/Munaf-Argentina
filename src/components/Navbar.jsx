@@ -82,8 +82,8 @@ export default function Navbar() {
                         to={item.href}
                         className={({ isActive, isPending }) =>
                           isActive
-                            ? "bg-custom-red text-white hover:text-white rounded-md px-3 py-2 text-xs font-medium text-center lg:text-lg"
-                            : "text-gray-300 hover:bg-custom-red hover:text-white rounded-md px-3 py-2 text-xs font-medium text-center lg:text-lg"
+                            ? "bg-custom-red text-white hover:text-white rounded-md px-3 py-2 text-[10px] font-medium text-center lg:text-sm"
+                            : "text-gray-300 hover:bg-custom-red hover:text-white rounded-md px-3 py-2 text-[10px] font-medium text-center lg:text-sm"
                         }
                       >
                         {item.name}

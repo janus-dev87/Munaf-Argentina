@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
-import image from "../images/Image1-15-762x456.jpg";
+import image from "../images/580b585b2edbce24c47b2ca5.png";
 import { text } from "@fortawesome/fontawesome-svg-core";
 import OpinionCard from "../components/OpinionCard";
 
@@ -111,6 +111,12 @@ function VendeAuto() {
       content: "No estoy satisfecho con este producto, no lo recomendaría.",
       rating: 1,
     },
+    {
+      name: "Alejandro Martín",
+      description: "Vendió su Renault",
+      content: "No estoy satisfecho con este producto, no lo recomendaría.",
+      rating: 1,
+    },
   ];
 
   console.log(formData);
@@ -118,13 +124,13 @@ function VendeAuto() {
   return (
     <>
       <Navbar />
-      <section className="pt-24 md:pt-40 container mx-auto">
+      <section className="pt-24 md:pt-40">
         {!formIsOpen && (
           <div className="pb-8">
             <section
-              className="pb-4 px-12 md:px-0 lg:flex mx-auto
+              className="pb-4 px-12 lg:flex mx-auto
          md:text-lg
-         lg:text-xl lg:gap-x-16 md:max-w-2xl lg:max-w-3xl xl:max-w-5xl
+         lg:text-xl lg:gap-x-16 lg:px-14
         "
             >
               <div className="lg:w-1/2">
@@ -151,7 +157,7 @@ function VendeAuto() {
                     return <li key={question.key}>{question.description}</li>;
                   })}
                 </ol>
-                <div className="flex justify-center my-2 py-4">
+                <div className="flex justify-center my-2 py-4 lg:justify-start">
                   <Button name="Vende tu auto" onclick={handleForm}></Button>
                 </div>
               </div>
@@ -351,7 +357,7 @@ function VendeAuto() {
             </div>
           </section>
         )}
-        <section className="px-12 pb-8 lg:pb-12 xl:pb-16">
+        <section className="px-12 pb-8 lg:pb-12 xl:pb-16 lg:px-14">
           <div
             className="py-16 lg:flex lg:justify-center lg:items-center lg:flex-col
            "
@@ -366,7 +372,8 @@ function VendeAuto() {
             <div
               className="py-3 gap-y-4 flex flex-col items-center justify-center
              md:flex-row md:flex-wrap md:flex-1  md:gap-x-8
-             md:max-w-2xl lg:max-w-3xl xl:max-w-5xl"
+             xl:w-full xl:justify-evenly
+             "
             >
               {reviews.map((review, index) => (
                 <OpinionCard key={index} opinion={review} />
