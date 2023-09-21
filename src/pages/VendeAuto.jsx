@@ -135,8 +135,8 @@ function VendeAuto() {
             >
               <div className="lg:w-1/2">
                 <h1
-                  className="text-gray-900  font-bold text-4xl text-center mb-1
-            lg:mb-4 lg:text-left
+                  className="text-gray-900   font-bold text-4xl text-center mb-1
+            lg:mb-4 lg:text-left lg:leading-tight
           lg:text-5xl
           "
                 >
@@ -165,7 +165,7 @@ function VendeAuto() {
                 <img
                   src={image}
                   alt="Vende tu auto"
-                  className="shadow-lg shadow-gray-500/60 rounded-2xl 
+                  className=" 
                sm:w-4/5 
               md:w-3/5 lg:w-full"
                 />
