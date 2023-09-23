@@ -4,7 +4,7 @@ import image from "../images/auto-2179220-1920.jpg";
 export default function CardCarousel(props) {
   return (
     <div
-      class="hover:bg-gray-200 bg-gray-300/40 cursor-pointer max-w-sm rounded-2xl overflow-hidden shadow-xl shadow-gray-400/70 min-w-[220px] p-1 m-1 mr-8 h-auto
+      className="hover:bg-gray-200 bg-gray-300/40 cursor-pointer max-w-sm rounded-2xl overflow-hidden shadow-xl shadow-gray-400/70 min-w-[220px] p-1 m-1 mr-8 h-auto
     xl:min-w-[320px]"
     >
       <div className="p-2">

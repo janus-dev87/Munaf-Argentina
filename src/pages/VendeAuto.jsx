@@ -182,14 +182,14 @@ function VendeAuto() {
             </h1>
             <div className="md:flex md:flex-col md:justify-center md:items-center">
               <form
-                class="w-full max-w-lg 
+                className="w-full max-w-lg 
               md:max-w-2xl lg:max-w-3xl xl:max-w-5xl"
                 onSubmit={handleSubmit}
               >
-                <div class="flex flex-wrap">
-                  <div class="w-full md:w-1/2 md:px-2">
+                <div className="flex flex-wrap">
+                  <div className="w-full md:w-1/2 md:px-2">
                     <label
-                      class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
                       htmlFor="grid-name"
                     >
                       Nombre (Requerido)
