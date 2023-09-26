@@ -12,6 +12,7 @@ import Button from "../components/Button";
 import image from "../images/static_map_2023-1024x500.jpg";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { ChatBubbleBottomCenterIcon } from "@heroicons/react/24/outline";
 
 function Servicio() {
   const list = [
@@ -110,28 +111,31 @@ function Servicio() {
         className="flex flex-col items-center justify-center px-6 h-[600px] bg-hero-image bg-cover bg-gray-800/80 bg-blend-multiply 
       md:pr-48 md:pl-16 xl:items-start"
       >
-        <h1
-          className="text-gray-50 text-2xl font-bold mt-48
+        <div className="xl:max-w-[60%]">
+          <h1
+            className="text-gray-50 text-2xl font-bold mt-48 mb-3
         lg:text-3xl
         xl:text-5xl"
-        >
-          Tráenos tu auto para un chequeo gratis o un servicio completo
-        </h1>
-        <p className="text-gray-50 text-sm lg:text-base xl:text-xl">
-          Nuestro equipo de mecánicos está altamente capacitado y comprometido
-          en brindar un servicio de excelencia, utilizando los mejores equipos y
-          tecnologías disponibles en el mercado.
-        </p>
+          >
+            Tráenos tu auto para un chequeo gratis o un servicio completo
+          </h1>
+          <p className="text-gray-50 text-sm lg:text-base xl:text-xl mb-3">
+            Nuestro equipo de mecánicos está altamente capacitado y comprometido
+            en brindar un servicio de excelencia, utilizando los mejores equipos
+            y tecnologías disponibles en el mercado.
+          </p>
+          <Button name="Reservar turno" />
+        </div>
       </section>
       <section className="px-6 py-8">
         <h1 className="text-4xl px-2 font-bold tracking-tight text-center hidden lg:block lg:py-10">
           Ventajas
         </h1>
-        <div className="lg:flex lg:items-start lg:justify-center">
+        <div className="lg:flex lg:items-start lg:justify-center lg:max-w-6xl lg:mx-auto lg:space-x-5">
           <div
             className="px-5 mx-auto h-auto py-4
       border-b-[2px] border-solid border-b-slate-400/20
-    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center"
+    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center lg:px-0"
           >
             <div className="rounded-full hidden lg:block bg-red-50/75 p-12">
               <FontAwesomeIcon
@@ -141,30 +145,28 @@ function Servicio() {
               />
             </div>
             <h2
-              className="text-xl py-5 px-2 
+              className="text-lg py-5 px-2 
         font-bold tracking-tight text-red-500 text-center
          sm:px-24
-         lg:px-5 lg:min-h-[130px] lg:flex lg:items-center
-         xl:text-2xl"
+         lg:px-0 lg:min-h-[98px] lg:flex lg:items-center
+         "
             >
               Experiencia y conocimiento técnico
             </h2>
             <p
               className="px-3 text-center text-sm text-gray-900/90
         sm:px-36 sm:py-2
-        lg:px-5 lg:text-center
-        xl:text-base"
+        lg:px-0 lg:text-center
+        "
             >
               El taller cuenta con mecánicos altamente capacitados y con
-              experiencia en reparar y mantener automóviles, lo que representa
-              una ventaja competitiva importante para atraer a clientes que
-              buscan un servicio de alta calidad y confianza.
+              experiencia en reparar y mantener automóviles.
             </p>
           </div>
           <div
             className="px-5 mx-auto h-auto py-4
       border-b-[2px] border-solid border-b-slate-400/20
-    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center"
+    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center lg:px-0"
           >
             <div className="rounded-full hidden lg:block bg-red-50/75 p-12">
               <FontAwesomeIcon
@@ -174,31 +176,29 @@ function Servicio() {
               />
             </div>
             <h2
-              className="text-xl py-5 px-2 
+              className="text-lg py-5 px-2 
         font-bold tracking-tight text-red-500 text-center
          sm:px-24
-         lg:px-5 lg:min-h-[130px] lg:flex lg:items-center
-         xl:text-2xl"
+         lg:px-0 lg:min-h-[98px] lg:flex lg:items-center
+         "
             >
               Variedad de servicios
             </h2>
             <p
               className="px-3 text-center text-sm text-gray-900/90
         sm:px-36 sm:py-2
-        lg:px-5 lg:text-center
-        xl:text-base"
+        lg:px-0 lg:text-center
+        "
             >
               El taller ofrece una amplia gama de servicios, como mantenimiento
               preventivo, reparaciones mecánicas, alineación y balanceo de
-              llantas, entre otros. Esto puede ser una ventaja competitiva al
-              atraer a clientes que buscan un lugar donde puedan solucionar
-              todos los problemas de su automóvil en un solo lugar.
+              llantas, entre otros.
             </p>
           </div>
           <div
             className="px-5 mx-auto h-auto py-4
       border-b-[2px] border-solid border-b-slate-400/20
-    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center"
+    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center lg:px-0"
           >
             <div className="rounded-full hidden lg:block bg-red-50/75 p-12">
               <FontAwesomeIcon
@@ -208,30 +208,28 @@ function Servicio() {
               />
             </div>
             <h2
-              className="text-xl py-5 px-2 
+              className="text-lg py-5 px-2 
         font-bold tracking-tight text-red-500 text-center
          sm:px-24
-         lg:px-5 lg:min-h-[130px] lg:flex lg:items-center
-         xl:text-2xl"
+         lg:px-0 lg:min-h-[98px] lg:flex lg:items-center
+         "
             >
               Tecnología y herramientas de vanguardia
             </h2>
             <p
               className="px-3 text-center text-sm text-gray-900/90
         sm:px-36 sm:py-2
-        lg:px-5 lg:text-center
-        xl:text-base"
+        lg:px-0 lg:text-center
+        "
             >
               El taller cuenta con herramientas y tecnología de última
-              generación, lo que representa una ventaja competitiva importante
-              para atraer a clientes que buscan un servicio rápido y de alta
-              calidad.
+              generación.
             </p>
           </div>
           <div
             className="px-5 mx-auto h-auto py-4
       border-b-[2px] border-solid border-b-slate-400/20
-    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center"
+    lg:w-1/4 lg:border-b-0 lg:flex lg:flex-col lg:justify-center lg:items-center lg:px-0"
           >
             <div className="rounded-full hidden lg:block bg-red-50/75 p-12">
               <FontAwesomeIcon
@@ -241,33 +239,31 @@ function Servicio() {
               />
             </div>
             <h2
-              className="text-xl py-5 px-2 
+              className="text-lg py-5 px-2 
         font-bold tracking-tight text-red-500 text-center
          sm:px-24
-         lg:px-5 lg:min-h-[130px] lg:flex lg:items-center
-         xl:text-2xl"
+          lg:min-h-[98px] lg:flex lg:items-center lg:px-0
+         "
             >
               Atención personalizada
             </h2>
             <p
               className="px-3 text-center text-sm text-gray-900/90
         sm:px-36 sm:py-2
-        lg:px-5 lg:text-center
-        xl:text-base"
+        lg:px-0 lg:text-center
+        "
             >
               El taller ofrece una atención personalizada y un trato amable y
-              profesional a sus clientes. Esto representa una ventaja
-              competitiva importante al generar un ambiente de confianza y
-              fidelización de los clientes.
+              profesional a sus clientes.
             </p>
           </div>
         </div>
       </section>
       <section className="px-6 py-8 xl:px-16">
-        <h1 className="text-2xl text-center font-bold lg:text-3xl">
+        <h1 className="text-2xl text-center pb-5 font-bold lg:text-3xl xl:pb-10">
           Nuestros Servicios
         </h1>
-        <div className="py-3 xl:px-12">
+        <div className="py-3 xl:px-12 lg:max-w-6xl mx-auto">
           <ul className="space-y-px">
             {list.map(({ id, content }) => (
               <li
@@ -288,13 +284,13 @@ function Servicio() {
         </div>
       </section>
       <div className="xl:flex xl:px-6 xl:justify-center xl:items-center">
-        <section className="px-6 py-8 xl:w-1/2">
-          <h1 className="text-2xl text-center font-bold lg:text-3xl">
+        <section className="px-6 py-8 w-full">
+          <h1 className="text-2xl text-center font-bold lg:text-3xl pb-5 xl:pb-10">
             Contáctanos para tu servicio mecánico
           </h1>
           <form
             className="w-full max-w-lg py-3
-              md:max-w-2xl md:mx-auto lg:max-w-3xl xl:max-w-5xl"
+              md:max-w-2xl md:mx-auto lg:max-w-3xl xl:max-w-4xl"
             onSubmit={handleSubmit}
           >
             <div className="flex flex-wrap">
@@ -405,7 +401,7 @@ function Servicio() {
             </div>
           </form>
         </section>
-        <section className="px-6 pb-8 xl:w-1/2 xl:py-8">
+        {/* <section className="px-6 pb-8 xl:w-1/2 xl:py-8">
           <h1 className="text-2xl text-center font-bold pb-3 xl:text-3xl xl:hidden">
             Visítanos
           </h1>
@@ -413,7 +409,7 @@ function Servicio() {
             src={image}
             className="md:px-2 md:max-w-2xl md:mx-auto xl:w-full"
           />
-        </section>
+        </section> */}
       </div>
       <Newsletter />
       <Footer />
