@@ -396,7 +396,7 @@ function Servicio() {
                 ></textarea>
               </div>
             </div>
-            <div className="px-2 mt-3 xl:mt-5">
+            <div className="px-2 mt-3 xl:mt-5 text-center">
               <Button name="Enviar" />
             </div>
           </form>
