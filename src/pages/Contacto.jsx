@@ -59,7 +59,7 @@ function Contacto() {
           <h1 className="text-2xl text-center font-bold pb-5 xl:text-3xl xl:pb-10">
             Información de contacto
           </h1>
-          <div className="space-y-5 xl:py-3">
+          <div className="space-y-5 xl:py-3 xl:mt-10">
             <div>
               <p className="xl:text-xl">
                 <FontAwesomeIcon
@@ -169,14 +169,14 @@ function Contacto() {
                   Cuéntanos sobre tu auto
                 </label>
                 <textarea
-                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500
+                  className="appearance-none resize-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500
                 mb-3 
                 "
                   placeholder="Tu mensaje"
                   name="message"
                   id="grid-message"
                   cols="30"
-                  rows="10"
+                  rows="5"
                   onChange={handleInputChange}
                   value={formData.message}
                 ></textarea>
