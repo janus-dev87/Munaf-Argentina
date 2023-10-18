@@ -10,22 +10,24 @@ Munafó's website is developed with React. In this project I participated as fro
     - [Screenshots](#screenshots)
   - [Website live](#website-live)
   - [My process](#my-process)
-    - [Built with](#built-with)
   - [Author](#author)
 
 # Overview
 ## The Website 
 Munafó Argentina's website corresponds to a car dealership. It has different sections where you can see the advantages of the dealership, see the cars available for sale and schedule an appointment to access the mechanical services of the dealership. 
 ## Screenshots
-<img src="public/desktop_screenshot1" width="100%" height="90%">
-<img src="public/desktop_screenshot2" width="100%" height="90%">
+<img src="public/desktop_screenshot1.jpeg" width="100%" height="90%">
+<img src="public/desktop_screenshot2.jpeg" width="100%" height="90%">
 Desktop Version
-<img src="public/mobile_screenshot1" width="100%" height="90%">
-<img src="public/mobile_screenshot1" width="100%" height="90%">
+<img src="public/mobile_screenshot1.jpeg" width="auto" height="auto">
+<img src="public/mobile_screenshot2.jpeg" width="auto" height="auto">
 Mobile Version
+
 # [Website live](https://concesionario-arg.vercel.app/)
 ## My process
+
 React + TailwindCSS was used for the development of this website. The approach was to work using reusable components in the website to take advantage of working with a framework like React. 
+
 ## Author
 
 - Email: [cesararaujo.perez@gmail.com](mailto:cesararaujo.perez@gmail.com)
