@@ -28,9 +28,4 @@ Mobile Version
 
 React + TailwindCSS was used for the development of this website. The approach was to work using reusable components in the website to take advantage of working with a framework like React. 
 
-## Author
-
-- Email: [cesararaujo.perez@gmail.com](mailto:cesararaujo.perez@gmail.com)
-- Fiverr: [@araujo\_](https://www.fiverr.com/araujo_)
-- Upwork: [César Araujo](https://www.upwork.com/freelancers/~0131c3e9d8794f3c24)
 
